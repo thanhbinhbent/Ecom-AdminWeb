@@ -1,0 +1,11 @@
+.user_active {
+    color: var(--success);
+}
+
+.status-icon {
+    margin-right: 5px;
+}
+
+.user_blocked {
+    color: var(--danger);
+}
