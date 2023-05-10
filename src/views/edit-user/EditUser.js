@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import { Link, useParams } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import userService from '../../services/users.Services'
-import './editUser.css'
+
 const EditUser = () => {
   const { id } = useParams()
   const [userInfo, setUserInfo] = useState({})

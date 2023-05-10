@@ -23,7 +23,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { connect } from 'react-redux'
 import { setLoggedIn, setUser } from '../../../redux/actions/authActions'
 import userService from '../../../services/users.Services'
-import './login.css'
+
 import { phoneValidator } from '../../../utils'
 const Login = (props) => {
   const { isLoggedIn } = props

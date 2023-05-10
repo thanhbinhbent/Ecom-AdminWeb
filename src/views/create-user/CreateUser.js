@@ -3,7 +3,6 @@ import { phoneValidator, emailValidator, passwordValidator } from '../../utils'
 import { ToastContainer, toast } from 'react-toastify'
 import userService from '../../services/users.Services'
 import 'react-toastify/dist/ReactToastify.css'
-import './createUser.css'
 const CreateUser = () => {
   const [userInfo, setUserInfo] = useState({})
   const [errors, setErrors] = useState({})

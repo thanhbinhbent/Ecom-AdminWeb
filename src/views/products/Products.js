@@ -26,7 +26,7 @@ import logoBh from '../../assets/brand/favicon.ico'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { handleMoney } from '../../utils'
-import './style.css'
+
 const Products = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [visible, setVisible] = useState(false)

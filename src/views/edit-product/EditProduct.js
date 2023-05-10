@@ -5,8 +5,6 @@ import 'react-toastify/dist/ReactToastify.css'
 import PropTypes from 'prop-types'
 import productService from '../../services/products.Service'
 
-import './style.css'
-
 function EditProduct() {
   const { id } = useParams()
   const [product, setProduct] = useState({})

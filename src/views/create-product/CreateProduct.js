@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import productService from '../../services/products.Service'
-import './style.css'
 
 function CreateProduct() {
   const [product, setProduct] = useState({})

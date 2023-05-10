@@ -28,7 +28,7 @@ import { cilImage, cilTrash, cilPencil, cilStar } from '@coreui/icons'
 import avatar8 from './../../assets/images/avatars/8.png'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import './review-management.css'
+
 const ReviewManagement = () => {
   const [reviewIdToDelete, setReviewIdToDelete] = useState(null)
 

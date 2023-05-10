@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const serverUrl = 'https://ecommerceweb-fw4u.onrender.com'
+const serverUrl = 'https://bhshopadminserver.onrender.com'
 
 const errorHandler = (err) => {
   console.log(err)

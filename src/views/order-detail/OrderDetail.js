@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import PropTypes from 'prop-types'
 import ordersService from '../../services/orders.Service'
 import { handleMoney, formatDate } from '../../utils'
-import './orderDetail.css'
+
 function OrderDetail() {
   const { id } = useParams()
   const [order, setOrder] = useState({})

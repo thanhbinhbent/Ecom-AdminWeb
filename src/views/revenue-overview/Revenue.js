@@ -1,5 +1,5 @@
 import React from 'react'
-import './revenue.css'
+
 const RevenueSummary = () => {
   return (
     <div>

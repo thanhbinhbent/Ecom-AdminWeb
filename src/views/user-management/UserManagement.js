@@ -25,7 +25,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import userService from '../../services/users.Services'
 import { cilTrash, cilPencil, cilCheckCircle, cilXCircle } from '@coreui/icons'
 import avatar8 from './../../assets/images/avatars/8.png'
-import './userManagement.css'
+
 const Users = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [visible, setVisible] = useState(false)

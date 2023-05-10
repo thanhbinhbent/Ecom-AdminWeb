@@ -22,7 +22,6 @@ import CIcon from '@coreui/icons-react'
 import { cilTrash, cilDescription } from '@coreui/icons'
 import ordersService from '../../services/orders.Service'
 import { handleMoney, formatDate } from '../../utils'
-import './orders.css'
 function Orders() {
   const [isLoading, setIsLoading] = useState(true)
   const [visible, setVisible] = useState(false)
@@ -105,7 +104,7 @@ function Orders() {
                   </ol>
                 </CTableDataCell>
                 <CTableDataCell className="text-center">
-                  {item.user[0].last_name + ' ' + item.user[0].first_name}
+                  {item.user[0]?.last_name + ' ' + item.user[0]?.first_name}
                 </CTableDataCell>
 
                 <CTableDataCell>{item.shipping_address}</CTableDataCell>
