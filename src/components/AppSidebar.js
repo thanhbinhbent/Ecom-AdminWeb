@@ -8,7 +8,7 @@ import { AppSidebarNav } from './AppSidebarNav'
 
 import SimpleBar from 'simplebar-react'
 import 'simplebar/dist/simplebar.min.css'
-import SideLogo from 'src/assets/brand/web-logo.png'
+import SideLogo from '../assets/brand/web-logo.png'
 // sidebar nav config
 import navigation from '../_nav'
 

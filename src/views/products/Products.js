@@ -106,10 +106,7 @@ const Products = () => {
             visibleProducts?.map((item, index) => (
               <CTableRow v-for="item in tableItems" key={index} className="product-view__row">
                 <CTableDataCell className="text-center">
-                  <CAvatar
-                    size="md"
-                    src="https://icon-library.com/images/image-icon-png/image-icon-png-6.jpg"
-                  />
+                  <CAvatar size="md" src={item.image[0] && item?.image[0]} />
                 </CTableDataCell>
                 <CTableDataCell>{item.name}</CTableDataCell>
                 <CTableDataCell className="text-center">
