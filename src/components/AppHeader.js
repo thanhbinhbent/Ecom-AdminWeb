@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import {
   CContainer,
@@ -36,15 +36,13 @@ const AppHeader = () => {
         </CHeaderBrand>
         <CHeaderNav className="d-none d-md-flex me-auto">
           <CNavItem>
-            <CNavLink to="/products/all" component={NavLink}>
-              Sản phẩm
-            </CNavLink>
+            <Link to="/products/all">Sản phẩm</Link>
           </CNavItem>
           <CNavItem>
-            <CNavLink href="/users/all">Tài khoản</CNavLink>
+            <Link to="/users/all">Tài khoản</Link>
           </CNavItem>
           <CNavItem>
-            <CNavLink href="/orders/all">Đơn hàng</CNavLink>
+            <Link to="/sell/orders">Đơn hàng</Link>
           </CNavItem>
         </CHeaderNav>
         <CHeaderNav>
