@@ -48,7 +48,7 @@
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
-    height: 100px;  
+    height: 5px;  
   }
   
   /* Track */
@@ -117,7 +117,7 @@ gap: 20px;
 .sidebar-brand-logo{
     filter: brightness(0) invert(1);
 }.sidebar-toggler{
-display: none!important;
+
 }
 .sidebar-brand{
   background-color: var(--cui-info,var(--color-primary));
@@ -365,4 +365,13 @@ th.text-center {
   align-items:center;
   height: 100%;
   padding: 20px;
+}
+
+@media (max-width: 910px){
+  .infor-company{
+    display: none;
+  }
+  button[type="submit"]{
+    margin-top:18px;
+  }
 }

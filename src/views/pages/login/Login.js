@@ -124,7 +124,7 @@ const Login = (props) => {
                   </CForm>
                 </CCardBody>
               </CCard>
-              <CCard className="text-white bg-primary py-5" style={{ width: '44%' }}>
+              <CCard className="text-white bg-primary py-5 infor-company" style={{ width: '44%' }}>
                 <CCardBody className="text-center">
                   <div>
                     <h5>Quản lý cửa hàng</h5>

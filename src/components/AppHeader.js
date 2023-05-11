@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useSelector, useDispatch } from 'react-redux'
 import {
   CContainer,
   CHeader,
@@ -11,6 +10,7 @@ import {
   CNavLink,
   CNavItem,
 } from '@coreui/react'
+import { useSelector, useDispatch } from 'react-redux'
 import CIcon from '@coreui/icons-react'
 import { cilBell, cilEnvelopeOpen, cilList, cilMenu } from '@coreui/icons'
 import { AppBreadcrumb } from './index'
@@ -18,19 +18,11 @@ import { AppHeaderDropdown } from './header/index'
 import logo from '../assets/brand/web-logo.png'
 import './header/header.css'
 const AppHeader = () => {
-  const dispatch = useDispatch()
-  const sidebarShow = useSelector((state) => state.sidebarShow)
   const user = useSelector((state) => state.user.user)
 
   return (
     <CHeader position="sticky" className="mb-4">
       <CContainer fluid>
-        <CHeaderToggler
-          className="ps-1"
-          onClick={() => dispatch({ type: 'set', sidebarShow: !sidebarShow })}
-        >
-          <CIcon icon={cilMenu} size="lg" />
-        </CHeaderToggler>
         <CHeaderBrand className="mx-auto d-md-none" to="/">
           <img src={logo} alt="" height="30" />
         </CHeaderBrand>
